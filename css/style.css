@@ -1,0 +1,414 @@
+@font-face {
+  font-family: 'BNO';
+  src: url("../font/big_noodle_titling_oblique.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'BN';
+  src: url("../font/big_noodle_titling.ttf") format('truetype');
+}
+
+/* Estilos Gerais */
+
+
+/* Header */
+
+.header{
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background:black;
+  z-index: 10;
+  border-bottom: 3px solid #0978f8;
+}
+
+.header h1 a{
+  font-family: 'BNO';
+  background: -webkit-linear-gradient(#00f4fc 30%, #0941f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px; color: #fffdd9;
+  margin-top: -5px;
+  padding: 0 0 0 0;
+  
+}
+
+.header nav{
+  text-align: right;
+  margin: 15px 0 0 0;
+}
+
+.header nav ul li{
+  display: inline-block;
+  font-family: "BN";
+  color: white;
+  font-size: 30px;
+  letter-spacing: .1em;
+  padding: 0 0 0 2px;
+}
+
+.header nav ul li:nth-child(1), .header nav ul li:nth-child(2){
+  padding: 0 30px 0 0;
+}
+
+.header nav ul li:nth-child(5), .header nav ul li:nth-child(4){
+  margin-right: 10px;
+}
+
+.separador{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  background: rgb(179, 179, 179);
+  margin: 0 25px 0 0;
+
+}
+
+.header nav ul li:nth-child(1):hover, .header nav ul li:nth-child(2):hover{
+  color: #00b7ff;
+  transition:0.2s;
+
+}
+
+.youtubeHover {
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 900px;
+  right: 0;
+  height: 30px;
+  width: 40px;
+  opacity: 0;
+}
+
+.twitterHover{
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 856px;
+  right: 0;
+  height: 30px;
+  width: 40px;
+  opacity: 0;
+}
+
+.discordHover{
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 806px;
+  right: 0;
+  height: 30px;
+  width: 40px;
+  opacity: 0;
+}
+
+.discordHover:hover{
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.twitterHover:hover{
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.youtubeHover:hover{
+  opacity: 1;
+  transition: 0.2s;
+
+}
+
+/* Video */
+
+.video{
+  width: 100%;
+  height: 580px;
+  margin-top: 60px;
+  background: url("../img/fundo1.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+
+  
+}
+
+.video_carrosel{
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 15px;
+  box-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+
+/* Sobre */
+
+.sobre{
+  height: 450px;
+}
+
+.sobre_texto{
+  float: left;
+}
+
+.sobre_texto h2{
+  font-family: 'BNO';
+  font-size: 102px;
+  margin: 80px 0 0 0;
+}
+
+.sobre_texto h3{
+  font-family: 'BN';
+  font-size: 31px;
+  padding: 20px 0;
+}
+
+.sobre_texto p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.jinx{
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+/* Tutoriais */
+
+.tutorial{
+  height: 1000px;
+  background: url("../img/fundo2.jpg") no-repeat center;
+  z-index: -2;
+}
+
+.tutorial h2{
+  font-family: 'BNO';
+  color: white;
+  font-size: 102px;
+  margin: 170px 0 0 0;
+}
+
+.tutorial h3{
+  font-family: 'BN';
+  color: white;
+  font-size: 31px;
+  margin: 10px 0 0 0;
+}
+
+.tutorial ul{
+  padding: 10px 0 0 0;
+}
+
+.tutorial ul li{
+  display: inline;
+  padding: 0 30px 0 0;
+}
+
+.adc, .top, .mid, .jungle, .supp{
+  width: 50px;
+  opacity: 0;
+  
+}
+
+.adc{
+  opacity: 0;
+  
+}
+
+.supp{
+  opacity: 0;
+}
+
+.lanes{
+  float: left;
+}
+
+.videos{
+  width: 300px;
+  padding: 10px 10px 0 0px ;
+}
+
+/* Botão Overlays */
+.top_overlay, .jungle_overlay, .mid_overlay{
+  opacity: 1;
+}
+
+
+
+/* Top overlay */
+.top_overlay{
+  position: absolute;
+  top: 348px;
+  bottom: 0;
+  left: 0px;
+  width: 50px;
+  right: 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Jungle Overlay */
+.jungle_overlay{
+  position: absolute;
+  top: 345px;
+  bottom: 0;
+  left: 85px;
+  width: 50px;
+  right: 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Mid Overlay */
+.mid_overlay{
+  position: absolute;
+  top: 348px;
+  bottom: 0;
+  left: 169px;
+  width: 50px;
+  right: 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Adc Overlay */
+.adc_overlay{
+  position: absolute;
+  top: 347px;
+  bottom: 0;
+  left: 252px;
+  width: 50px;
+  right: 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Supp overlay */
+.supp_overlay{
+  position: absolute;
+  top: 348px;
+  bottom: 0;
+  left: 336px;
+  width: 60px;
+  right: 0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+
+
+/* Adc */
+
+.videos_adc{
+  display: none;
+}
+
+.videos_adc:active{
+  transition: 0.5s;
+}
+
+
+.adc_video1{
+  margin: 40px 0 0 0;
+}
+
+.videos{
+  width: 560px;
+}
+
+.videos ul li {
+  display: inline;
+  padding: 0 0 0 0;
+}
+.jinx2{
+  margin-top: -140px;
+}
+
+/* Supporte */
+
+.videos_supp{
+  float: left;
+  display: none;
+}
+
+.videos_supp li{
+  padding: 0;
+}
+
+.thresh{
+  position: absolute;
+  width: 450px;
+  top: 330px;
+  left: 530px;
+  padding: 0 0 0 -10px;
+  margin: -60px 0 0 0;
+  display: none;
+}
+/* Top */
+.yasuo{
+  position: absolute;
+  top: 260px;
+  left: 550px;
+  width: 430px;
+}
+.videos_top{
+  display: none;
+}
+
+/* Mid */
+
+.lux{
+  position: absolute;
+  top: 180px;
+  left: 600px;
+  
+}
+
+.videos_mid{
+  display: none;
+}
+
+/* Jungle */
+
+.leona{
+  position: absolute;
+  top: 140px;
+  left: 550px;
+  display: none;
+}
+.videos_jungle{
+  display: none;
+}
+
+/* Footer */
+
+.footer{
+  background-color: #111111;
+  border-top: 3px solid #4a4a4a;
+  margin-top: -100px;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 10px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.footer ul li:hover{
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.Blade1Footer{
+  font-family: "BNO";
+  color: white;
+  font-size: 46px;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
