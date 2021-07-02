@@ -1,3 +1,35 @@
+/* Menu Sobre */
+ const sobre = document.querySelector(".header ul li:first-child")
+
+sobre.addEventListener("click", (event) => {
+  event.preventDefault()
+  const element = event.target;
+  const id = element.getAttribute('href')
+  const to = document.querySelector(id).offsetTop;
+
+  window.scroll({
+    top: to - 50,
+    behavior: "smooth",
+  })
+})
+
+/* Menu Contato */
+const contato = document.querySelector('.header ul li:nth-child(2)')
+
+contato.addEventListener("click", (event) => {
+  event.preventDefault()
+  const element = event.target;
+  const id = element.getAttribute('href')
+  const to = document.querySelector(id).offsetTop;
+
+  window.scroll({
+    top: to,
+    behavior: "smooth",
+  })
+}) 
+
+/* Lanes */
+
 const buttonAdc = document.querySelector(".adc_overlay")
 const buttonSupp = document.querySelector(".supp_overlay")
 const buttonTop = document.querySelector(".top_overlay")
@@ -23,8 +55,10 @@ buttonJg.addEventListener("click", function(){
   const leona = document.querySelector(".leona")
 
   if (jg.style.display == "none"){
+    
     jg.style.display = "block";
     leona.style.display = "block";
+    jg.style.transition = "2s"
     buttonJg.style.opacity = "1";
     buttonJg.style.transition = "0.5s"
     supp.style.display = "none";
@@ -44,6 +78,7 @@ buttonJg.addEventListener("click", function(){
     jg.style.display = "none";
     leona.style.display = "none"
     buttonJg.style.opacity = "0.5"
+    
   } 
 })
 
@@ -218,3 +253,4 @@ buttonSupp.addEventListener("click", function(){
     buttonSupp.style.opacity = "0.5"
   }
 })
+
