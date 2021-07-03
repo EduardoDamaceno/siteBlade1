@@ -29,12 +29,18 @@ contato.addEventListener("click", (event) => {
 }) 
 
 /* Lanes */
-
 const buttonAdc = document.querySelector(".adc_overlay")
 const buttonSupp = document.querySelector(".supp_overlay")
-const buttonTop = document.querySelector(".top_overlay")
 const buttonMid = document.querySelector(".mid_overlay")
 const buttonJg = document.querySelector(".jungle_overlay")
+const buttonTop = document.querySelector(".top_overlay")
+const adc = document.querySelector(".videos_adc");
+const jinx = document.querySelector(".jinx2")
+adc.style.display = "block";
+jinx.style.display = "block";
+buttonAdc.style.opacity = "1";
+buttonAdc.style.transition = "0.5s"
+
 
 
 buttonJg.addEventListener("click", function(){
