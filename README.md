@@ -32,7 +32,7 @@
     </ul>
     <h2 id = "Autor" >Autor</h2>
     <p>Meu nome é Eduardo tenho 20 anos e caso queira entrar em contato:
-    eduardo.dam@gmail.com
+    eduardodam.contato@gmail.com
     </p>
     
     
